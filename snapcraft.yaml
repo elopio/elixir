@@ -1,0 +1,15 @@
+name: elixir
+version: v1.3.2
+summary: dynamic functional language for building scalable and applications
+description: |
+  Elixir leverages the Erlang VM, known for running low-latency, distributed
+  and fault-tolerant systems, while also being successfully used in web
+  development and the embedded software domain.
+confinement: strict
+grade: stable
+
+parts:
+  elixir:
+    source: .
+    plugin: make
+    after: [erlang]
